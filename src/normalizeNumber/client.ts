@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { API_DEFAULT_TIMEOUT_MS } from '../utils/constant.js';
-import {applicationAuthorization} from '../utils/functions.js';
+import { API_DEFAULT_TIMEOUT_MS } from '../constant';
+import {applicationAuthorization} from '../utils';
 const noAuthClient = axios.create({
     baseURL: process.env.BASE_API,
     timeout: API_DEFAULT_TIMEOUT_MS,
