@@ -1,0 +1,1 @@
+export const API_DEFAULT_TIMEOUT_MS: number = 30000;
