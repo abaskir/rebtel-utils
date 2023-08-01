@@ -1,0 +1,1 @@
+export var API_DEFAULT_TIMEOUT_MS = 30000;
