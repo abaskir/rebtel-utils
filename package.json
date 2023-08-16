@@ -1,6 +1,6 @@
 {
   "name": "@rebtel-dev/rebtel-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "index.js",
   "scripts": {
     "compile": "npm run lint && rm -rf dist/lib && tsc && tsc --build tsconfig.es5.json",

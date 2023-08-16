@@ -51,17 +51,6 @@ export var normalizeNumber = function (msisdn, countryId) { return __awaiter(voi
                 return [4 /*yield*/, noAuth.get(resource)];
             case 1:
                 response = _a.sent();
-                if (response.data.countryId === 'DO') {
-                    if (response.data.endpoint.startsWith('+1809')) {
-                        response.data.countryCode = '1809';
-                    }
-                    else if (response.data.endpoint.startsWith('+1829')) {
-                        response.data.countryCode = '1829';
-                    }
-                    else if (response.data.endpoint.startsWith('+1849')) {
-                        response.data.countryCode = '1849';
-                    }
-                }
                 return [2 /*return*/, response.data];
             case 2:
                 error_1 = _a.sent();
