@@ -1,12 +1,15 @@
 {
   "name": "@rebtel-dev/rebtel-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "scripts": {
     "compile": "npm run lint && rm -rf dist/lib && tsc && tsc --build tsconfig.es5.json",
     "lint": "eslint . --ext .ts",
     "test": "jest",
     "test:coverage": "jest --coverage"
+  },
+  "browser": {
+    "fs": false
   },
   "author": "Alper Baskir",
   "license": "MIT",

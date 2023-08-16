@@ -15,16 +15,6 @@ export const normalizeNumber = async (msisdn: string, countryId: string) => {
       
           const response = await noAuth.get(resource);
       
-          if (response.data.countryId === 'DO') {
-            if (response.data.endpoint.startsWith('+1809')) {
-              response.data.countryCode = '1809';
-            } else if (response.data.endpoint.startsWith('+1829')) {
-              response.data.countryCode = '1829';
-            } else if (response.data.endpoint.startsWith('+1849')) {
-              response.data.countryCode = '1849';
-            }
-          }
-      
           return response.data;
     } catch (error) {
         console.log(error);
